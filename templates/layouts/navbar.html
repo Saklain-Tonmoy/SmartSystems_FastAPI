@@ -1,0 +1,75 @@
+
+<!-- Main Header-->
+<header class="main-header">
+    <!-- Main box -->
+    <div class="main-box">
+        <div class="menu-box">
+            <div class="logo"><a href="/"><img src="{{ url_for('static', path='images/logo.png') }}" alt="" title="" srcset="{{ url_for('static', path='images/logo-white-big.png') }} 2x"></a></div>
+
+            <!--Nav Box-->
+            <div class="nav-outer">
+                <!-- Main Menu -->
+                <nav class="main-menu navbar-expand-md navbar-light">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navigation clearfix">
+                            <li class="{{'current' if page_name == 'Home' }}"><a href="/">Home</a></li>
+                            <li class="{{'current' if data.page == 'About' }}"><a href="/about">About Us</a></li>
+                            <li class="{{'current' if data.page == 'Services' }}"><a href="/services">Services</a></li>
+                            <li class="{{'current' if data.page == 'Process' }}"><a href="/process">Our Process</a></li>
+                            <li class="dropdown {{'current' if data.page == '#' }}">
+                                <a href="#"><span>Pages</span></a>
+                                <ul>
+                                    <li class="{{'current' if page_name == 'Interactive Security' }}"><a href="/interactive-security">Interactive Security</a></li>
+                                    <li class="{{'current' if page_name == 'Video Monitoring' }}"><a href="/video-monitoring">Video Monitoring</a></li>
+                                    <li class="{{'current' if page_name == 'Energy Management' }}"><a href="/energy-management">Energy Management</a></li>
+                                    <li class="{{'current' if page_name == 'Product Page' }}"><a href="/product-page">Product Page</a></li>
+                                    <li class="{{'current' if page_name == 'Intelligent Home' }}"><a href="/intelligent-home">Intelligent Home</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/contacts">Contacts</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- Main Menu End-->
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Header  -->
+    <div class="sticky-header">
+        <div class="outer-box">
+            <!--Logo-->
+            <div class="logo">
+                <a href="#" title="Sticky Logo"><img src="{{ url_for('static', path='/images/sticky-logo.png') }}" alt="Sticky Logo"></a>
+            </div>
+
+            <!--Nav Outer-->
+            <div class="nav-outer">
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                    <!--Keep This Empty / Menu will come through Javascript-->
+                </nav><!-- Main Menu End-->
+            </div>
+        </div>
+    </div><!-- End Sticky Menu -->
+
+    <!-- Mobile Header -->
+    <div class="mobile-header">
+        <div class="logo"><a href="/"><img src="{{ url_for('static', path='images/logo.png') }}" alt="" title="" srcset="{{ url_for('static', path='images/logo-white-big.png') }} 2x"></a></div>
+
+        <!--Nav Box-->
+        <div class="nav-outer clearfix">
+            <!--Keep This Empty / Menu will come through Javascript-->
+        </div>
+    </div>
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+        <nav class="menu-box">
+            <div class="nav-logo"><a href="/"><img src="{{ url_for('static', path='images/logo.png') }}" alt="" title="" srcset="{{ url_for('static', path='images/logo-white-big.png') }} 2x"></a></div>
+            <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+        </nav>
+    </div><!-- End Mobile Menu -->
+
+</header>
+<!--End Main Header -->
