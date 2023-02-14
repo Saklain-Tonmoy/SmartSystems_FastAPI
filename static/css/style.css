@@ -7243,7 +7243,8 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
     width: 150%;
     height: 150%;
     opacity: 0.5;
-    background-color: #59ab66;
+    /* background-color: #59ab66; */
+	background-color: #008fd8;
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
     opacity: 0.9; 

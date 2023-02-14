@@ -1,3 +1,4 @@
+import uvicorn
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
@@ -95,3 +96,7 @@ async def page(request: Request, page_name: str):
         "page": page_name
     }
     return templates.TemplateResponse("page.html", {"request": request, "data": data})
+
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", )
