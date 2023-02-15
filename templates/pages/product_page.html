@@ -562,4 +562,5 @@
 
 {% block scripts %}
   {{ super() }}
+    <script src="{{ url_for('static', path='js/knob.js') }}"></script>
 {% endblock %}
