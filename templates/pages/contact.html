@@ -18,6 +18,54 @@
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="{{ url_for('static', path='/js/respond.js') }}"></script><![endif]-->
 
+    <style>
+        .contact-map-section {
+            position: relative;
+            padding: 500px 0 145px;
+        }
+        .contact-map-section .content-column .inner-column {
+            position: relative;
+            padding-left: 25px;
+            margin-top: 90px;
+        }
+        .page-title .cws-image-bg:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgb(88,110,111);
+            background: -moz-linear-gradient(left, rgba(88,110,111,1) 0%, rgba(54,162,104,1) 50%, rgba(15,120,96,1) 100%);
+            background: -webkit-linear-gradient(left, #009de6 0%,#009de6 50%,#009de6 100%);
+            background: linear-gradient(to right, #009de6 0%,#009de6 50%,#009de6 100%);
+            /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=&#039;#586e6f&#039;, endColorstr=&#039;#0f7860&#039;,GradientType=1 ); */
+            opacity: 0.9;
+        }
+        .contact-info .contact-block .icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 70px;
+            width: 70px;
+            background-color: #009de6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 30px;
+            color: #ffffff;
+            margin: 0 0 20px;
+        }
+        .contact-info .contact-block h5 {
+            font-size: 24px;
+            color: #009de6;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+    </style>
+
 {% endblock %}
 
 {% block page_content %}
@@ -38,59 +86,6 @@
     </section>
     <!--End Page Title-->
 
-    <!-- Features Section Six  -->
-    <section class="feaures-section-six">
-        <!-- Background Layers -->
-        <div class="background-layers">
-            <div class="cws-image-bg"></div>
-        </div>
-
-        <div class="auto-container">
-            <div class="row">
-                <!-- Feature BLock Nine -->
-                <div class="feature-block-nine col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="icon-box">
-                            <span class="icon flaticon-shopping-cart-2"></span>
-                        </div>
-                        <h4>Orders</h4>
-                    </div>
-                </div>
-
-                <!-- Feature BLock Nine -->
-                <div class="feature-block-nine col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="icon-box">
-                            <span class="icon flaticon-browser-2"></span>
-                        </div>
-                        <h4>Your Project</h4>
-                    </div>
-                </div>
-
-                <!-- Feature BLock Nine -->
-                <div class="feature-block-nine col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="icon-box">
-                            <span class="icon flaticon-headset-2"></span>
-                        </div>
-                        <h4>Support</h4>
-                    </div>
-                </div>
-
-                <!-- Feature BLock Nine -->
-                <div class="feature-block-nine col-lg-3 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="icon-box">
-                            <span class="icon flaticon-devices-1"></span>
-                        </div>
-                        <h4>Become a Partner</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Features Section Six -->
-
     <!-- Contact Map Section -->
     <section class="contact-map-section">
         <!-- Background Layers -->
@@ -98,10 +93,11 @@
             <div class="cws-image-bg">
                 <div class="cws-triangle-overlay"></div>
                 <div class="map-outer">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12609.73108660754!2d-122.47279800000001!3d37.803331!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808586e6302615a1%3A0x86bd130251757c00!2sStorey%20Ave%2C%20San%20Francisco%2C%20CA%2094129!5e0!3m2!1sen!2sus!4v1577174486999!5m2!1sen!2sus" height="450" style="border:0; width:100%;"></iframe>
+                    <!-- <iframe src="" height="450" style="border:0; width:100%;"></iframe> -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14605.82699006285!2d90.39455788436834!3d23.766744416386754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c781bbc20d1d%3A0xc9427ec3e21bc8f6!2sDhaka%201219!5e0!3m2!1sen!2sbd!4v1701617923780!5m2!1sen!2sbd" height="450" style="border:0; width:100%;"></iframe>
                 </div>
             </div>
-        </div>
+        <!-- </div> -->
 
 
         <div class="auto-container">
@@ -110,16 +106,14 @@
                     <div class="inner-column">
                         <div class="sec-title">
                             <h2>HOW TO REACH US</h2>
-                            <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis accumsan mi nec elementum. Nulla ante metus, varius non condimentum id, molestie nec tellus. Fusce odio nulla, consectetur in sagittis eget.</div>
                         </div>
-                        <h4>Ingenious Portugal</h4>
+                        <h4>Dhaka, Bangladesh</h4>
                         <div class="contact-info row">
                             <div class="contact-block col-lg-6 col-md-6 col-sm-12">
                                 <div class="inner">
                                     <span class="icon fa fa-map-signs"></span>
                                     <h5>Address</h5>
-                                    <p>250 Bisca 11 st Fl.</p>
-                                    <p>Florida 33148, Miami</p>
+                                    <p>348/a, Khilgaon, Dhaka-1216</p>
                                 </div>
                             </div>
 
@@ -127,8 +121,9 @@
                                 <div class="inner">
                                     <span class="icon fa fa-phone"></span>
                                     <h5>Contact Details</h5>
-                                    <p>(+123) – 456 – 7890</p>
-                                    <p>ingenious@mail.com</p>
+                                    <p>+8801726275678</p>
+                                    <p>+8801799413357</p>
+                                    <p>ssystems.bd@gmail.com</p>
                                 </div>
                             </div>
                         </div>
@@ -138,66 +133,6 @@
         </div>
     </section>
     <!-- End Contact Map Section -->
-
-    <!-- Contact Form Section -->
-    <section class="contact-form-section">
-        <!-- Background Layers -->
-        <div class="background-layers">
-            <div class="cws-image-bg"></div>
-            <div class="cws-triangle-overlay top-left"></div>
-            <div class="cws-triangle-overlay top-right"></div>
-        </div>
-
-        <div class="auto-container">
-            <div class="row">
-                <!-- Content Column -->
-                <div class="content-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <div class="sec-title light">
-                            <h2>Contact Us</h2>
-                            <div class="text">Integer molestie molestie neque et cursus. Curabitur diam felis, ultricies non mauris tempor, interdum fringilla mauris. Nunc vitae sodales nisl, at accumsan odio. Vestibulum interdum velit id magna dictum.</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Form Column -->
-                <div class="form-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="inner-column">
-                        <div class="default-form contact-form-two">
-                            <form action="#" method="post" id="email-form">
-
-                                <div class="row mid-spacing">
-                                    <div class="form-group mb-0 col-lg-12">
-                                        <div class="response"></div>
-                                    </div>
-
-                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                        <label> Your Name (required)</label>
-                                        <input type="text" name="username" class="username">
-                                    </div>
-
-                                    <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                        <label>Email (required)</label>
-                                        <input type="email" name="email" class="email">
-                                    </div>
-
-                                    <div class="form-group col-lg-12 col-md-12 col-sm-12">
-                                        <label>Message</label>
-                                        <textarea name="contact_message"></textarea>
-                                    </div>
-
-                                    <div class="form-group col-lg-12 col-md-12 col-sm-12 text-center">
-                                        <button class="theme-btn btn-style-one" type="button" id="submit" name="submit-form">Send Request</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Contact Form Section -->
 
 {% endblock %}
 

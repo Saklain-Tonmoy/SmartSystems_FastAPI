@@ -1328,14 +1328,14 @@ hr.thick{
 /* Backgrund Caribbean */
 .theme-btn.bg-caribbean{
 	color: #ffffff;
-    background-color: #03c8ad;
-    border-color: #03c8ad;
+    background-color: rgba(3,156,229,0.8);
+    border-color: rgba(3,156,229,0.8);
 }
 
 .theme-btn.bg-caribbean:hover{
-    color: #03c8ad;
+    color: #000000;
     background-color: #ffffff;
-    border-color: #03c8ad;
+    border-color: rgba(3,156,229,0.8);
 }
 
 /* Backgrund Dark */
@@ -7419,7 +7419,7 @@ clip-path: polygon(0% 120px, 50% 60px, 100% 0%, 100% 100%, 50% calc(100% - 60px)
 
 .service-block-four .inner-box:hover .icon-box{
 	background: #539760;
-	border-color: #539760;
+	border-color: rgba(3,156,229,0.8);
 	color: #ffffff;
 	-webkit-transform: translateY(10px);
 	transform: translateY(10px);
